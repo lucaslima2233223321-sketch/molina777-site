@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>MolinaBet - Plataforma de Jogos Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">Molina<span>Bet</span></div>
+    <nav class="menu">
+      <a href="#casino">Casino</a>
+      <a href="#sports">Sports (demo)</a>
+      <a href="#promocoes">Promoções</a>
+      <a href="#ajuda">Ajuda</a>
+    </nav>
+    <div class="auth-buttons">
+      <button class="btn-outline btn-big">Login</button>
+      <button class="btn-primary btn-big">Registrar</button>
+    </div>
+  </header>
+
+  <!-- BANNER MOLINA 777 -->
+  <section class="banner-molina">
+    <div class="banner-content">
+      <h1 class="banner-title">Molina 777</h1>
+      <p class="banner-subtitle">
+        Plataforma DEMO de jogos para diversão. Aqui é tudo fictício:
+        sem depósito, sem saque e sem dinheiro real rolando.
+      </p>
+      <div class="banner-actions">
+        <button class="btn-primary btn-huge">Começar a jogar (demo)</button>
+        <button class="btn-outline btn-big"
+          onclick="document.getElementById('casino').scrollIntoView({behavior:'smooth'});">
+          Ver jogos
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- AVISO: É SÓ DEMO -->
+  <section class="info-section" id="conscientizacao">
+    <h2>Calma aí, tropa! É só DEMO</h2>
+    <p>
+      Por enquanto a <strong>Molina 777</strong> é só <strong>DEMO</strong>.
+      Você entra pra brincar nas telas e joguinhos fictícios, sem depósito,
+      sem saque e sem dinheiro de verdade.
+    </p>
+    <p>
+      Em breve a <strong>Molina 777</strong> estará <strong>ON</strong>. Fique ligado!
+    </p>
+  </section>
+
+  <!-- BLOCO DE JACKPOT -->
+  <section class="hero hero-jackpot">
+    <div class="hero-content">
+      <h2>Jackpot Total (DEMO)</h2>
+      <p>
+        Valor puramente ilustrativo, usado só para mostrar como um painel de
+        jackpot pode aparecer em uma plataforma.
+      </p>
+    </div>
+    <div class="hero-highlight">
+      <h2>Jackpot Demo</h2>
+      <p class="jackpot-value" id="jackpotValue">R$ 250.000,00</p>
+      <small>Valor fictício para demonstração</small>
+    </div>
+  </section>
+
+  <main>
+    <!-- Jogos -->
+    <section class="games-section" id="casino">
+      <div class="section-header">
+        <h2>Jogos em destaque</h2>
+        <div class="filters">
+          <button class="filter-btn active" data-category="all">Todos</button>
+          <button class="filter-btn" data-category="slots">Slots</button>
+          <button class="filter-btn" data-category="cards">Cartas</button>
+          <button class="filter-btn" data-category="roulette">Roleta</button>
+          <button class="filter-btn" data-category="other">Outros</button>
+        </div>
+      </div>
+
+      <div class="games-grid" id="gamesGrid">
+        <!-- cards gerados pelo script.js -->
+      </div>
+    </section>
+
+    <!-- Sports -->
+    <section class="info-section" id="sports">
+      <h2>Sports (DEMO)</h2>
+      <p>
+        Aqui poderia ficar uma área de apostas esportivas, mas nesta versão DEMO
+        tudo é apenas visual, sem apostas com dinheiro real.
+      </p>
+    </section>
+
+    <!-- Promoções -->
+    <section class="promos-section" id="promocoes">
+      <h2>Promoções DEMO</h2>
+      <div class="promos-grid">
+        <article class="promo-card">
+          <h3>Bônus de Boas-Vindas (FICTÍCIO)</h3>
+          <p>
+            Ganhe até <strong>100% de bônus</strong> no primeiro “depósito”
+            fictício. Apenas exemplo visual, sem dinheiro real.
+          </p>
+        </article>
+        <article class="promo-card">
+          <h3>Cashback Semanal (FICTÍCIO)</h3>
+          <p>
+            Parte das “perdas” em moedas fictícias volta pra sua conta demo.
+          </p>
+        </article>
+        <article class="promo-card">
+          <h3>Torneios de Slots (DEMO)</h3>
+          <p>
+            Simulação de rankings e torneios entre amigos, só pra testar layout
+            e diversão.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Ajuda -->
+    <section class="info-section" id="ajuda">
+      <h2>Ajuda & Aviso</h2>
+      <p>
+        Este site é um <strong>projeto de demonstração</strong>, sem apostas
+        com dinheiro real. Use para brincar no modo demo e visualizar como
+        funcionaria uma plataforma de jogos.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> MolinaBet - Projeto DEMO</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
